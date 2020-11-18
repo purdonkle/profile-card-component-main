@@ -38,12 +38,21 @@ body {
   text-shadow: 0.3px 0.3px var(--vd-desat-blue-color);
   color: var(--vd-desat-blue-color);
 }
+
 .profile-card {
   width: 325px;
   height: 375px;
   background-color: var(--white);
   border-radius: 10px;
-  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.35);
+	box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.35);
+	transition: .3s box-shadow, .3s margin-bottom
+	ease-in-out;
+}
+
+.profile-card:hover {
+	box-shadow: 2px 12px 50px rgba(0,0,0, 0.55);
+	margin-bottom: 20px;
+	cursor: pointer;
 }
 
 .profile-bg {
