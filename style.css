@@ -4,7 +4,8 @@
   --d-cyan-color: hsl(185, 75%, 39%);
   --vd-desat-blue-color: hsl(229, 23%, 23%);
   --d-grayish-blue-color: hsl(227, 10%, 46%);
-  --d-gray-color: hsl(0, 0%, 59%);
+	--d-gray-color: hsl(0, 0%, 59%);
+	--white : hsl(0, 0%, 95%);
 }
 
 * {
@@ -15,15 +16,50 @@
 }
 
 body {
-	background-color: var(--d-cyan-color);
-	background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-	background-repeat: no-repeat, no-repeat;
-	background-attachment: fixed, fixed;
-	background-position: left -15vw bottom 35vh, right -15vw top 50vh;
-	background-size: 60vw 60vw;
+  background-color: var(--d-cyan-color);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: left -13vw bottom 35vh, right -13vw top 50vh;
+  background-size: 60vw 60vw;
   width: 100vw;
   min-height: 100vh;
 	overflow-x: hidden;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.profile-card {
+	width: 325px;
+	height: 350px;
+	background-color: var(--white);
+	border-radius: 10px;
+	box-shadow: 2px 2px 35px rgba(0,0,0,0.2);
+}
+
+.profile-bg {
+
+}
+
+.profile-picture {
+
+}
+
+.profile-main {
+
+}
+
+.profile-stats {
+
+}
+
+.stats {
+
 }
 
 .attribution {
